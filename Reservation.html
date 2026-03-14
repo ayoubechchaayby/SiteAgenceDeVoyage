@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./styles/Reservation.css"/>
+		<link rel="stylesheet" href="./styles/footer.css"/>
+  		<link rel="stylesheet" href="./styles/header.css"/>
+		<meta charset="utf-8"/>
+		<title>Reservation</title>
+	</head>
+	<body>
+		<!--En tête-->
+		<header>
+  		<div class="header-inner">
+    		<a href="index.html">
+      			<img src="./image/logoprojet.jpg" alt="Logo DREAMTRIP" class="logo-header">
+    		</a>
+    		<h1>DREAMTRIP</h1>
+    		<nav>
+    		<div class="nav-toggle">Menu ☰</div>
+      			<ul class="nav-list">
+        			<li><a href="index.html">Voyages</a></li>
+        			<li><a class="active" href="Reservation.html">Réservation</a></li>
+        			<li><a href="a-propos-de-nous.html">À propos de nous</a></li>
+      			</ul>
+    		</nav>
+  			</div>
+  <p class="slogan">Voyagez là où vos rêves commencent !</p>
+</header>
+		<!--Fin En tête-->
+		<main>
+<h2>Nos Guides</h2>
+<div class="guide-container">
+    <!-- Guide Français -->
+    <div class="guide-card">
+        <img src="https://i.pravatar.cc/150?img=15" alt="Guide Français">
+        <div class="guide-name">Ayoub Ech-chaayby</div>
+    </div>
+
+    <!-- Guide Chinois -->
+    <div class="guide-card">
+        <img src="https://i.pravatar.cc/150?img=32" alt="Guide Chinois">
+        <div class="guide-name">Li Wei</div>
+    </div>
+
+    <!-- Guide Arabe -->
+    <div class="guide-card">
+        <img src="https://i.pravatar.cc/150?img=5" alt="Guide Arabe">
+        <div class="guide-name">Clara Dati</div>
+    </div>
+
+    <!-- Guide Américain -->
+    <div class="guide-card">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Guide Américain">
+        <div class="guide-name">Corentin Picard</div>
+    </div>
+
+</div>
+
+      <div class="container">
+        <h1>Formulaire de Réservation</h1>
+        <p class="subtitle">Voyagez dans vos rêves</p>
+
+        <form id="reservationForm">
+          <!-- Informations personnelles -->
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nom">Prénom</label>
+            <input type="text" id="nom" name="prénom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Téléphone </label>
+            <input type="tel" id="tel" name="tel" required>
+          </div>
+
+          <!-- Type d'expérience -->
+          <div class="form-group">
+            <label>Type d'expérience: </label>
+              	<select>
+                  <option>VR Simple- Casque de réalité virtuelle</option>
+                  <option>VR Immersive - Casque VR + Salle immersive</option>
+                  <option>Réel - Par avions</option>
+                  <option>Réel - Téléportation</option>
+                </select>
+          </div>
+
+           <!-- Pay de voyage-->
+          <div class="form-group">
+            <label> Pays de voyage</label>
+                <select>
+                  <option>France</option>
+                  <option>USA</option>
+                  <option>Maroc</option>
+                  <option>Chine</option>
+                </select>
+          </div>
+              <!-- Guide -->
+          <div class="form-group">
+            <label> Guide</label>
+                <select>
+                  <option>Jean Dupont</option>
+                  <option>Li Wei</option>
+                  <option>Ayoub Ech-chaayby</option>
+                  <option>Corentin Picard</option>
+                </select>
+          </div>
+
+          <!-- Date et nombre de personnes -->
+          <div class="form-group">
+            <label for="date">Date souhaitée</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="personnes">Nombre de personnes</label>
+            <input type="number" id="personnes" name="personnes" min="1" max="10" value="1" required>
+          </div>
+          
+          <button type="submit" class="submit-btn"> Réserver mon rêve</button>
+        </form>
+      </div>
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=2.063369750976563%2C48.76863595003534%2C2.6367187500000004%2C48.969625376333106&amp;layer=mapnik&amp;marker=48.869231581254205%2C2.3500442504882812" ></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.8692&amp;mlon=2.3500#map=12/48.8692/2.3500&amp;layers=N">Afficher une carte plus grande</a></small>
+		</main>
+		<!--Pied de page ne pas toucher-->
+		<footer>
+	<div class="footer-container">
+
+		<!-- Logo et nom de l'agence -->
+		<div class="footer-section">
+			<a href="https://www.iut-orsay.universite-paris-saclay.fr/" target="_blank" title="Site Web">
+			<img src="image/logoiut1.png" alt="Logo IUT" class="footer-logo">
+			</a>
+			<h3>Membres du Projet :</h3>
+			<ul>Corentin Picard</ul>
+			<ul>Ayoub Ech-Chaayby</ul>
+		</div>
+
+		<!-- Informations de contact -->
+		<div class="footer-section">
+			<h4>Contact</h4>
+			<address>
+			 13 Avenue des Sciences<br>
+			 91190 Gif-sur-Yvette, France<br>
+			📞 +33 1 23 45 67 89<br>
+					 <a href="mailto:contact@voyages-corentin-ayoub.fr">contact@voyages-corentin-ayoub.fr</a>
+				</address>
+				</div>
+				<!-- Liens rapides -->
+				<div class="footer-section">
+				<h4>Notre rapport</h4>
+				<ul>
+					<li><a href="Rapport.pdf">.pdf</a></li>
+					<li><a href="Rapport.docx">.docx</a></li>
+				</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="footer-rights">
+				© 2052 DREAMTRIP — Tous droits réservés.<br>
+			</p>
+		</footer>
+	</body> 
+</html>

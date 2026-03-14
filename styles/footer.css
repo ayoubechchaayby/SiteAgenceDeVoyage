@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* Style général du pied de page */
+footer {
+  background: gray;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Conteneur principal du footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;        /* Permet d’aller à la ligne sur petits écrans */
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Chaque bloc du footer */
+.footer-section {
+  flex: 1 1 250px;        /* Largeur minimale */
+  margin: 10px;
+}
+
+/* Logo */
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Liens */
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Liste sans puces */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* Ligne de séparation */
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Texte final */
+.footer-rights {
+  font-size: 13px;
+  opacity: 0.8;
+}

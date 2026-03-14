@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+    /* FONTS */
+	
+    /* MONTSERRAT */
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/montserrat-regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+    /* ROBOTO */
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/roboto-regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat";
+}
+
+    header {
+      text-align: center;
+      padding: 1rem 2rem;
+      background: white;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-header {
+      width: 120px;
+      background-color: #00A7A7;
+      padding: 2px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2rem;
+      color: #00A7A7;
+      background-image: url("../image/fond.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+    }
+
+    /* ---------- STYLE GENERAL DU NAV ---------- */
+header nav {
+  background-image: url("../image/fond.jpg");
+  padding: 4px;
+  position: relative;
+  width: 200px;          /* largeur du menu */
+  border-radius: 5px;
+  color: #00A7A7;
+  font-weight: bold;
+}
+
+/* Bouton "Menu ☰" */
+nav .nav-toggle {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px;
+  border-radius: 5px;
+  user-select: none;
+  background-image: url("../image/fond.jpg");
+}
+
+/* Liste cachée par défaut */
+nav .nav-list {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-image: url("../image/fond.jpg");
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Affichage au survol du nav */
+nav:hover .nav-list {
+  display: flex;
+}
+
+/* Items du menu */
+nav .nav-list li a {
+  display: block;
+  padding: 6px;
+  color: #00A7A7;
+  text-decoration: none;
+}
+
+/* Dernier item sans bord */
+nav .nav-list li:last-child a {
+  border-bottom: none;
+}
+
+/* Survol items */
+nav .nav-list li a:hover {
+  background-color: rgb(226, 203, 160);
+}
+
+/* style du lien actif */
+nav .nav-list .active {
+  background-color: rgb(236, 218, 184);
+}
+
+    .slogan {
+      margin-top: 0.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-style: italic;
+      color: #00A7A7;
+      background-image: url("../image/fond.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+    }
+
+    /* Contenu global pour centrer toute la page sur PC */
+head {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
